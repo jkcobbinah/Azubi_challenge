@@ -568,4 +568,28 @@ footer{
         right: 0;
     }
 
+    .side-by-side {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .side-by-side p {
+        max-width: 85%;
+    }
+
+    #xx99-mark-1{
+        flex-direction: column-reverse;
+    }
+
+    /* #yx1-wireless > #yx1-wireless-right, */
+    #xx59-headphones > #xx59-headphones-right,
+    #xx99-mark-2 > #xx99-mark-2-right,
+    #xx99-mark-1 > #xx99-mark-1-right {
+        padding-left: 0;
+        align-self: center;
+        justify-items: center;
+
+    }
+
 }
