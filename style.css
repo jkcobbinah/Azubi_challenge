@@ -411,7 +411,8 @@ footer{
 
 #yx1-wireless > #yx1-wireless-right,
 #xx59-headphones > #xx59-headphones-right,
-#xx99-mark-2 > #xx99-mark-2-right{
+#xx99-mark-2 > #xx99-mark-2-right,
+#zx9-speaker > #zx9-speaker-right{
     padding-left: 10%;
 }
 
@@ -578,14 +579,17 @@ footer{
         max-width: 85%;
     }
 
-    #xx99-mark-1{
+    #xx99-mark-1,
+    #zx7-speaker{
         flex-direction: column-reverse;
     }
 
-    /* #yx1-wireless > #yx1-wireless-right, */
+    #yx1-wireless > #yx1-wireless-right,
     #xx59-headphones > #xx59-headphones-right,
     #xx99-mark-2 > #xx99-mark-2-right,
-    #xx99-mark-1 > #xx99-mark-1-right {
+    #xx99-mark-1 > #xx99-mark-1-right,
+    #zx9-speaker > #zx9-speaker-right,
+    #zx7-speaker > #zx7-speaker-right{
         padding-left: 0;
         align-self: center;
         justify-items: center;
