@@ -78,12 +78,9 @@ nav > #navbar{
     gap: 35px;
 }
 
-/* .nav-item{
-    list-style: none;
-} */
-
 #navbar > ul{
-    display: contents;
+    display: flex;
+    gap: 30px;
     list-style: none;
 }
 
@@ -109,7 +106,7 @@ nav > #site-logo > h1{
 .toggle-button {
     position: absolute;
     top: 1.25rem;
-    left: 8%;
+    left: 0;
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
@@ -127,6 +124,52 @@ nav > #site-logo > h1{
     width: 28px;
     background-color: #fff;
     border-radius: 10px;
+}
+
+@media(max-width: 875px) {
+    .toggle-button{
+        display: flex;
+        left: 9%;
+        z-index: 10;
+    }
+
+    nav > #site-logo{
+        padding-left: 38%;
+    }
+
+    #navbar .menu-container{
+        position: absolute;
+        top: -20rem;
+        left: 0;
+        flex-direction: column;
+        padding-left: 0;
+        width: 100%;
+        /* height: 100%; */
+        background-color: rgba(216, 125, 74, 1);
+        transition: all ease-in-out 0.35s;
+        align-items: center;
+        z-index: 1;
+        padding-bottom: 55px;
+    }
+
+    #navbar .menu-container > #home{
+        padding-top: 45px;
+    }
+
+    #navbar .menu-container.active {
+        top: 4rem;
+    }
+    .toggle-button.active :nth-child(1) {
+    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+    }
+
+    .toggle-button.active :nth-child(2) {
+    opacity: 0;
+    }
+
+    .toggle-button.active :nth-child(3) {
+    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+    }
 }
 
 #cart-btn{
@@ -428,11 +471,4 @@ footer{
 .side-by-side h5{
     letter-spacing: 10px;
     color: #D87D4A;
-}
-
-
-@media(max-width: 875px) {
-    .toggle-button{
-        display: flex;
-    }
 }
