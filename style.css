@@ -29,6 +29,15 @@ h4, h5{
     font-weight: normal;
 }
 
+#best-h1 > div{
+    display: flex;
+    color: #D87D4A;
+}
+
+#best-h1 > div::after{
+    content: "\00a0";
+}
+
 header{
     display: block;
     width: 100%;
