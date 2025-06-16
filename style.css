@@ -29,6 +29,10 @@ h4, h5{
     font-weight: normal;
 }
 
+#best-h1{
+    display: flex;
+}
+
 #best-h1 > div{
     display: flex;
     color: #D87D4A;
