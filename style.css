@@ -302,11 +302,11 @@ header > #hero-container > #home-hero-left{
 #home-zx7-speaker{
     margin: 0 auto;
     max-width: 80%;
-    height: 320px;
+    height: 350px;
     background-image: url(./assets/home/desktop/image-speaker-zx7.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     margin-block: 50px;
     display: flex;
     justify-content: flex-start;
@@ -382,6 +382,20 @@ footer{
     background-color: #000000;
 }
 
+#footer-nav{
+    position: relative;
+}
+
+#footer-nav > #site-logo::before{
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #D87D4A;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
 .footer-content{
     padding-block: 80px;
     color: #FFFFFF;
@@ -403,6 +417,10 @@ footer{
     display: inherit;
     justify-content: space-evenly;
     gap: 15px;
+}
+
+.footer-content .socials > a:hover{
+    color: #D87D4A;
 }
 
 #footer-nav{
@@ -491,7 +509,7 @@ footer{
     }
 
     header{
-        background-position-x: 90%;
+        background-image: url(./assets/home/tablet/image-header.jpg);
     }
 
     header > #hero-container{
@@ -581,7 +599,8 @@ footer{
         padding-bottom: 50px;
     }
 
-    .footer-center >.socials{
+    .footer-center > .socials{
+        display: flex;
         position: absolute;
         bottom: -40px;
         right: 0;
@@ -614,4 +633,57 @@ footer{
 
     }
 
+}
+
+@media (max-width: 700px){
+    .categories{
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    #home-yx1-earphones{
+        flex-direction: column;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    #footer-nav{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-nav > #navbar{
+        flex-direction: column;
+    }
+
+    .footer-center >.socials{
+        bottom: -110px;
+        right: 0;
+        left: 0;
+        justify-content: center;
+    }
+
+    #footer-nav > #site-logo::before{
+        right: 40%;
+        left: 40%;
+    }
+
+}
+
+
+@media (max-width: 575px){
+    header nav > #site-logo{
+        padding-left: 30%;
+    }
+
+    header > #hero-container h1{
+        font-size: xx-large;
+    }
+
+    #footer-nav > #site-logo::before{
+        right: 40%;
+        left: 40%;
+    }
 }
